@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <h1>Totally Trivial Trivia!</h1>
+
+    <!-- time remaining going to have to concatinate a number and "seconds" -->
+
+    <div id=instruct>
+
+        <h3 class="instructions"> User has 25 seconds to answer. </h3>
+        <h3></h3>
+        <h3></h3>
+
+        <button type="button" id="startGame">Start</button>
+
+    </div>
+
+    <div id="quiz">
+
+        <h2>Time Left: <span id="countdowntimer">25 </span> Seconds</h2>
+
+        <h4>Which fingernail grows the fastest?</h4>
+        <div>
+            <input type="radio" id="index" name="nail" value="incorrect">
+            <label for="index">Index</label>
+        </div>
+        <div>
+            <input type="radio" id="middle" name="nail" value="correct">
+            <label for="middle">Middle</label>
+        </div>
+        <div>
+            <input type="radio" id="pinky" name="nail" value="incorrect">
+            <label for="pinky">Pinky</label>
+        </div>
+
+        <h4>Fastest production car made to date?</h4>
+        <div>
+            <input type="radio" id="tesla" name="car" value="incorrect">
+            <label for="tesla">Tesla Roadster</label>
+        </div>
+        <div>
+            <input type="radio" id="ferrari" name="car" value="incorrect">
+            <label for="ferrari">LaFerrari</label>
+        </div>
+        <div>
+            <input type="radio" id="porsche" name="car" value="correct">
+            <label for="porsche">Porsche 918 Spyder</label>
+        </div>
+
+        <h4>Most sold video game to date?</h4>
+        <div>
+            <input type="radio" id="tetris" name="video" value="correct">
+            <label for="tetris">Tetris</label>
+        </div>
+        <div>
+            <input type="radio" id="minecraft" name="video" value="incorrect">
+            <label for="minecraft">Minecraft</label>
+        </div>
+        <div>
+            <input type="radio" id="gta" name="video" value="incorrect">
+            <label for="gta">Grand Theft Auto V</label>
+        </div>
+
+        <button type="button" id="submit">Get Results</button>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div id="finish">
+
+        <h2>Results!</h2>
+        <h3 id=points></h3>
+        <p></p>
+
+        <button type="button" id="reset">Restart</button>
+
+    </div>
+
+    <!-- <h4>Which fingernail grows the fastest?</h4>
+    <div>
+        <input type = "radio" id = "index" name = "nail" value = "incorrect">
+            <label for="index">Index</label>
+    </div>
+    <div>
+        <input type = "radio" id = "middle" name = "nail" value = "correct">
+            <label for="middle">Middle</label>
+    </div>
+    <div>
+        <input type = "radio" id = "pinky" name = "nail" value = "incorrect">
+            <label for="pinky">Pinky</label>
+    </div>
+
+    <h4>Fastest production car made to date?</h4>
+    <div>
+        <input type = "radio" id = "tesla" name = "car" value = "incorrect">
+            <label for="tesla">Tesla Roadster</label>
+    </div>
+    <div>
+        <input type = "radio" id = "ferrari" name = "car" value = "incorrect">
+            <label for="ferrari">LaFerrari</label>
+    </div>
+    <div>
+        <input type = "radio" id = "porsche" name = "car" value = "correct">
+            <label for="porsche">Porsche 918 Spyder</label>
+    </div>
+
+    <h4>Most sold video game to date?</h4>
+    <div>
+        <input type = "radio" id = "tetris" name = "video" value = "correct">
+            <label for="tetris">Tetris</label>
+    </div>
+    <div>
+        <input type = "radio" id = "minecraft" name = "video" value = "incorrect">
+            <label for="minecraft">Minecraft</label>
+    </div>
+    <div>
+        <input type = "radio" id = "gta" name = "video" value = "incorrect">
+            <label for="gta">Grand Theft Auto V</label>
+    </div> -->
+
+
+
+    <script src="assets/javascript/app.js"></script>
+
+
+
+</body>
+
+</html>
